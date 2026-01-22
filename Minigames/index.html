@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minigame Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Minigame Hub</h1>
+    <nav>
+        <button id="btn-whack">Whack-a-Mole</button>
+        <button id="btn-tictactoe">Tic Tac Toe</button>
+        <button id="btn-rps">Rock Paper Scissors</button>
+    </nav>
+    <div id="game-container">
+        <div id="whackGame" class="game">
+            <h2>Whack-a-Mole</h2>
+            <div id="whack-info">
+                <span id="whack-score">Score: 0</span>
+                <span id="whack-timer">Time: 30</span>
+            </div>
+            <div id="whack-grid">
+                <div class="whack-cell" data-index="0"></div>
+                <div class="whack-cell" data-index="1"></div>
+                <div class="whack-cell" data-index="2"></div>
+                <div class="whack-cell" data-index="3"></div>
+                <div class="whack-cell" data-index="4"></div>
+                <div class="whack-cell" data-index="5"></div>
+                <div class="whack-cell" data-index="6"></div>
+                <div class="whack-cell" data-index="7"></div>
+                <div class="whack-cell" data-index="8"></div>
+            </div>
+        </div>
+        <div id="ticGame" class="game">
+            <h2>Tic Tac Toe</h2>
+            <div id="tic-grid">
+                <div class="tic-cell" data-index="0"></div>
+                <div class="tic-cell" data-index="1"></div>
+                <div class="tic-cell" data-index="2"></div>
+                <div class="tic-cell" data-index="3"></div>
+                <div class="tic-cell" data-index="4"></div>
+                <div class="tic-cell" data-index="5"></div>
+                <div class="tic-cell" data-index="6"></div>
+                <div class="tic-cell" data-index="7"></div>
+                <div class="tic-cell" data-index="8"></div>
+            </div>
+            <div id="tic-info">
+                <span id="tic-turn">Turn: X</span>
+                <span id="tic-status"></span>
+            </div>
+            <button id="tic-reset">Reset</button>
+        </div>
+        <div id="rpsGame" class="game">
+            <h2>Rock Paper Scissors</h2>
+            <div id="rps-options">
+                <button data-choice="Rock">Rock</button>
+                <button data-choice="Paper">Paper</button>
+                <button data-choice="Scissors">Scissors</button>
+            </div>
+            <div id="rps-result"></div>
+            <div id="rps-score">Player: 0 | Computer: 0</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

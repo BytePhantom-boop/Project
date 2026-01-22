@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+nav {
+    margin: 10px 0;
+}
+nav button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+nav button:hover {
+    background-color: #d4d4d4;
+}
+#game-container .game {
+    display: none;
+    padding: 20px;
+    border: 2px solid #ddd;
+    margin: 20px auto;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#game-container .game h2 {
+    margin-top: 0;
+}
+#whack-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 10px 0;
+}
+.whack-cell {
+    width: 80px;
+    height: 80px;
+    background-color: #96c1a5;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.whack-cell.active {
+    background-color: #8b5a2b;
+}
+.whack-cell::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.whack-cell.active::after {
+    content: "🐹";
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    line-height: 80px;
+}
+#whack-info span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+#tic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 10px 0;
+}
+.tic-cell {
+    width: 60px;
+    height: 60px;
+    background-color: #fff176;
+    border: 2px solid #333;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tic-info {
+    margin: 10px 0;
+}
+#tic-status {
+    margin-left: 15px;
+    font-weight: bold;
+}
+#tic-reset {
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#rps-options {
+    margin: 10px 0;
+}
+#rps-options button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#rps-result {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#rps-score {
+    margin: 10px 0;
+    font-size: 1rem;
+}

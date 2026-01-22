@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productivity App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Productivity Tracker App</h1>
+
+    <section id="habit-tracker">
+      <h2>Habit Tracker</h2>
+      <div>
+        <input type="text" id="new-habit-input" placeholder="Add new habit" />
+        <button id="add-habit-btn">Add Habit</button>
+      </div>
+      <ul id="habit-list"></ul>
+    </section>
+
+    <section id="todo-list">
+      <h2>Todo List</h2>
+      <div>
+        <input type="text" id="new-task-input" placeholder="Add new task" />
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <ul id="task-list"></ul>
+    </section>
+
+    <section id="pomodoro-timer">
+      <h2>Pomodoro Timer</h2>
+      <div>
+        <label>Work duration (min): <input type="number" id="pomodoro-duration-input" min="1" /></label>
+        <label>Break duration (min): <input type="number" id="break-duration-input" min="1" /></label>
+      </div>
+      <div style="margin-top:10px;">
+        <span id="timer-display">00:00</span>
+      </div>
+      <div style="margin-top:10px;">
+        <button id="start-timer-btn">Start</button>
+        <button id="reset-timer-btn">Reset</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="habit.js"></script>
+</body>
+</html>

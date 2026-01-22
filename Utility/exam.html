@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="cgpa.html">CGPA Calculator</a>
+            <a href="exam.html">Exam Countdown</a>
+            <a href="notes.html">Notes</a>
+            <a href="attendance.html">Attendance Tracker</a>
+        </div>
+        <div>
+            <label for="theme-toggle">Dark Mode:</label>
+            <input type="checkbox" id="theme-toggle">
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Exam Countdown</h1>
+        <label for="examName">Exam Name:</label>
+        <input type="text" id="examName">
+        <label for="examDate">Exam Date:</label>
+        <input type="date" id="examDate">
+        <button id="addExamBtn">Add Exam</button>
+        <div id="examList"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="exam.js"></script>
+</body>
+</html>

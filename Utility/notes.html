@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="cgpa.html">CGPA Calculator</a>
+            <a href="exam.html">Exam Countdown</a>
+            <a href="notes.html">Notes</a>
+            <a href="attendance.html">Attendance Tracker</a>
+        </div>
+        <div>
+            <label for="theme-toggle">Dark Mode:</label>
+            <input type="checkbox" id="theme-toggle">
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Notes Manager</h1>
+        <label for="noteTitle">Title:</label>
+        <input type="text" id="noteTitle">
+        <label for="noteContent">Content:</label>
+        <textarea id="noteContent"></textarea>
+        <button id="addNoteBtn">Add Note</button>
+        <div id="notesContainer" class="notes-container"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="notes.js"></script>
+</body>
+</html>
